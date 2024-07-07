@@ -1,9 +1,10 @@
-﻿# The script of the game goes in this file.
+﻿init python:
+    import enviroment
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+
 
 define e = Character("Eileen")
+define user_name = enviroment.user_id
 
 
 # The game starts here.
@@ -15,6 +16,8 @@ label start:
 
 
     e "You've created a new Ren'Py game."
+
+    e "user: [user_name]"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
