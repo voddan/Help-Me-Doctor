@@ -3,7 +3,7 @@
 print("hello backend!")
 
 import requests
-user_responce = renpy.fetch("https://itch.io/api/1/me/me")
+user_responce = requests.get("https://itch.io/api/1/me/me")
 print(f"responce: {user_responce}")
 user_info = user_responce.json()
 print(f"info: {user_info}")
